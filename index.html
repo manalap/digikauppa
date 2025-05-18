@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreeBitcoin Bot – Manalap Digikauppa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card {
+      background: #fff;
+      padding: 2rem;
+      max-width: 600px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+    .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 1.5rem 0;
+    }
+    .paypal-button {
+      margin-top: 1rem;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>FreeBitcoin Bot</h1>
+    <p>AI pelaa automaattisesti sinun puolesta. Täydellinen ratkaisu helppoon ja tehokkaaseen BTC-kasvuun.</p>
+    <div class="price">Hinta: 1500 €</div>
+
+    <div class="paypal-button">
+      <!-- PayPal "Buy Now" Button -->
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="manalap@example.com">
+        <input type="hidden" name="item_name" value="FreeBitcoin Bot">
+        <input type="hidden" name="amount" value="1500.00">
+        <input type="hidden" name="currency_code" value="EUR">
+        <input type="hidden" name="no_shipping" value="1">
+        <input type="hidden" name="return" value="https://manalap.github.io/digikauppa/kiitos.html">
+        <input type="submit" value="Osta nyt PayPalilla" style="padding: 12px 24px; background-color: #0070ba; color: white; font-size: 1.1rem; border: none; border-radius: 6px; cursor: pointer;">
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    Kun olet maksanut, tuote toimitetaan sähköpostitse 24h kuluessa. Kiitos tuestasi!
+  </footer>
+</body>
+</html>
