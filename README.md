@@ -1,0 +1,2 @@
+# digishop
+freebitcoin AI bot
